@@ -16,6 +16,7 @@ func TestSplit(t *testing.T) {
 	expect(piscine.Split(" this is test   ", " "), []string{"this", "is", "test"}, t)
 	expect(piscine.Split("this is test isissi", "is"), []string{"th", " ", " test ", "si"}, t)
 	expect(piscine.Split("sepsesepsepssepsepsepsepsesepse", "sep"), []string{"se", "s", "se", "se"}, t)
+	expect(piscine.Split("sepssepsep", "sep"), []string{"s"}, t)
 	expect(piscine.Split("sssssts s sss ", "s"), []string{"t", " ", " ", " "}, t)
 	expect(piscine.Split(" this is test   ", ""), []string{" this is test   "}, t)
 	expect(piscine.Split("", ""), nil, t)

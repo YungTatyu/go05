@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	fmt.Prlintln(piscine.Split("HelloHAhowHAareHAyou", "HA"))
+	fmt.Println(piscine.Split("HelloHAhowHAareHAyou", "HA"))
 }
