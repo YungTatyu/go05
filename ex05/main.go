@@ -1,11 +1,10 @@
 package main
 
 import (
+	"fmt"
 	"piscine"
 )
 
 func main() {
-	piscine.PrintWordsTables([]string{"hello", "how", "are", "you"})
-	piscine.PrintWordsTables([]string{"test"})
-	piscine.PrintWordsTables([]string{""})
+	fmt.Println(piscine.ConvertBase("101011", "01", "0123456789"))
 }
